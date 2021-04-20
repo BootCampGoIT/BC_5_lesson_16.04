@@ -4,7 +4,7 @@ import tutorsReducer from "./tutors/tutorsReducers";
 
 const rootReducer = combineReducers({
   groups: groupsReducer,
-  tutors: tutorsReducer,
+  // tutors: tutorsReducer,
 });
 
 export default rootReducer;

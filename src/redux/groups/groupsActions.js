@@ -1,4 +1,10 @@
-import { ADDGROUP, DELETEGROUP } from "./groupsConstants";
+import {
+  ADDGROUP,
+  DELETEGROUP,
+  SETLOADER,
+  SETERROR,
+  RESETERROR,
+} from "./groupsConstants";
 
 const addGroup = (group) => {
   return {
@@ -14,4 +20,22 @@ const deleteGroup = (id) => {
   };
 };
 
-export { addGroup, deleteGroup };
+const setLoader = () => {
+  return { type: SETLOADER };
+};
+
+// ===============error==================
+
+const setError = (error) => {
+  return {
+    type: SETERROR,
+    payload: error,
+  };
+};
+const resetError = () => {
+  return {
+    type: RESETERROR,
+  };
+};
+
+export { addGroup, deleteGroup, setLoader, setError, resetError };

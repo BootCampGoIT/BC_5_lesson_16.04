@@ -2,4 +2,12 @@ const ADDGROUP = "groups/addGroup";
 const DELETEGROUP = "groups/deleteGroup";
 const EDITGROUP = "groups/editGroup";
 
-export {ADDGROUP, DELETEGROUP, EDITGROUP}
+// ========== loader =============
+const SETLOADER = "groups/setLoader";
+
+// =========== ERROR ==================
+
+const SETERROR = "groups/setError";
+const RESETERROR = "groups/resetError";
+
+export { ADDGROUP, DELETEGROUP, EDITGROUP, SETLOADER, SETERROR, RESETERROR };

@@ -8,8 +8,8 @@ const App = () => {
     <>
       <h2>Redux</h2>
       <GroupsForm />
-      <TutorForm />
-      <TutorsList />
+      {/* <TutorForm />
+      <TutorsList /> */}
     </>
   );
 };
